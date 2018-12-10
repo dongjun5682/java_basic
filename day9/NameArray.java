@@ -1,7 +1,8 @@
 package day9;
 
 public class NameArray {
-		public void test(){
+
+		public void name(){
 		String[] names = new String[5];
 		
 		names[0] = "ȫ�浿";
@@ -21,8 +22,4 @@ public class NameArray {
 		}
 		System.out.println(res);
 	}
-		public static void main(String[] args) {
-			NameArray name = new NameArray();
-			name.test();
-		}
 }

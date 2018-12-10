@@ -83,7 +83,7 @@ public class Menu {
 				break;
 			case "5":
 				Scanner scan = new Scanner(System.in); 
-		        System.out.println("name input");
+		        System.out.println("이름과 점수를 입력하세요.");
 		        String name1 = scan.next();
 		        int a = scan.nextInt();
 		        String name2 = scan.next();

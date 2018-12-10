@@ -5,9 +5,9 @@ import java.util.Scanner;
 public class Grade {
 	public void ranking(){
 		Scanner sc = new Scanner(System.in);
-		String[] name= new String[3];
-		int[] grade = new int[3];
-		for(int i = 0; i <= 2; i++){
+		String[] name= new String[5];
+		int[] grade = new int[5];
+		for(int i = 0; i < grade.length; i++){
 			System.out.println("학생 이름를 입력하세요.");
 			name[i] = sc.next();
 			System.out.println("학생 점수를 입력하세요.");
@@ -25,7 +25,7 @@ public class Grade {
 					name[j] = t1;
 				}
 			}
-			System.out.println("1등 : "+name[i] +"점수: "+ grade[i]);
+			System.out.println(i+1+"등 : "+name[i] +" 점수: "+ grade[i]);
 		}
 		
 //		Scanner scan = new Scanner(System.in); 
