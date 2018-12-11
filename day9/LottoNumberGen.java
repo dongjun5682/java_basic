@@ -1,10 +1,11 @@
 package day9;
 
 import java.util.Random;
+import java.util.Set;
 
 public class LottoNumberGen {
 	
-	public void gen(){
+	public String gen(){
 	Random random = new Random();
 	int[] lotto = new int[6];
 	String res = "";
@@ -13,6 +14,7 @@ public class LottoNumberGen {
 		lotto[i] =number;
 		res += lotto[i]+" ";
 	}
-		System.out.println("로또번호: "+res);
+		return "로또번호: "+"[ "+res+"]";
 	}
+	
 }

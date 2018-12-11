@@ -3,8 +3,7 @@ package day9;
 import java.util.Scanner;
 
 public class NameArray2 {
-	public void name2(){
-		Scanner scan =new Scanner(System.in);
+	public String name2(){
 		String[] name = {"È«±æµ¿","¼¼Á¾´ë¿Õ","Àå¿µ½Ç"};
 		String res = "";
 		for (int i = 0; i < name.length; i++) {
@@ -14,6 +13,6 @@ public class NameArray2 {
 				res += name[i] + " ";
 			}
 		}
-		System.out.println(res);
+		return res;
 	}
 }

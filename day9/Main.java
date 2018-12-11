@@ -6,10 +6,9 @@ public class Main {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		
 		while(true){
 			System.out.println("[ 메뉴 ] \n"
-					+ " 0.종료 \n"
+					+ "0.종료 \n"
 					+ "1.BMI \n"
 					+ "2.계산기 \n"
 					+ "3.1~10까지합 \n"
@@ -19,28 +18,24 @@ public class Main {
 					+ "7.이름배열2 \n"
 					+ "8.이름과점수배열 \n"
 					+ "9.홀수,짝수 합구하기 \n"
-					+ "10.점수배열 \n");
+					+ "10.점수배열 ");
 			int select = scan.nextInt();
 			switch (select) {
 			case 0:System.out.println("종료입니다.");return;
 			case 1:
 				Bmi b = new Bmi();
-				b.bodyFit();
 				break;
 
 			case 2:
 				Calc c = new Calc();
-				c.calculation();
 				break;
 
 			case 3:
-				ForDemo loop = new ForDemo();
-				loop.test();
+				Sequence loop = new Sequence();
 				break;
 				
 			case 4:	
 				Gugudan gugudan = new Gugudan();
-				gugudan.gugu();
 				break;
 			
 			case 5:
@@ -60,17 +55,14 @@ public class Main {
 				
 			case 8:
 				NameScoreArray namescore = new NameScoreArray();
-				namescore.namescoreArray();
 				break;
 				
 			case 9:
 				OddSum odd = new OddSum();
-				odd.sum();
 				break;
 				
 			case 10:
 				ScoreArray scores = new ScoreArray();
-				scores.score();
 			}
 		}
 

@@ -4,13 +4,8 @@ import java.util.Scanner;
 
 public class Bmi {
 
-	public void bodyFit(){
-		Scanner sc = new Scanner(System.in);
-		System.out.println("몸무게를입력하세요.");
-		int w = sc.nextInt();
-		System.out.println("키를입력하세요.");
-		double h = sc.nextDouble();
-		
+	public String bodyFit(int h ,double w){
+	
 		double h1 = h/100;
 		double bmi = w /(h1 * h1);
 		String re = "";
@@ -28,6 +23,6 @@ public class Bmi {
 		}else {
 			re = "저체중입니다.";
 		}
-		System.out.println(re);	
+		return re;	
 	}
 }

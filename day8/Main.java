@@ -1,11 +1,11 @@
 package day8;
 import java.util.Scanner;
 
+import day9.Genderchecker;
+
 public class Main {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		Calc c = new Calc();
-		Bmi b = new Bmi();
 		Year y = new Year();
 		Genderchecker checker = new Genderchecker();   
 		Grade g =new Grade();
@@ -18,10 +18,10 @@ public class Main {
 				System.out.println("종료입니다.");
 				return;
 			case "1":
-				c.calculation();
+				
 				break;
 			case "2":
-				b.bodyFit();
+				
 				break;
 			case "3":
 				y.year();
